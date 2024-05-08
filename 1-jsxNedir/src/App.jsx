@@ -8,7 +8,9 @@ let myClassName = "btnClassName";
 function App() {
 
 /*
-  React kendi dom yapısını oluşturur ve sadece değiştirdiğimiz yer render edilir.
+  React kendi dom yapısını oluşturur ve sadece değiştirdiğimiz yer render edilir. 
+  
+  normal parantez kullanımı ( return () derken mesela ) genellikle ifadeyi gruplama veya karmaşıklığı azaltma amacıyla yapılır.
 
   jsx js kodları içerisine html kodları yazmamızı sağlar.  JavaScript için bir syntax uzantısıdır.
   JSX, React elementleri üretir. 
