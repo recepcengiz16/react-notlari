@@ -32,7 +32,7 @@ function App() {
 
   class Deneme2 extends React.Component {
 
-    constructor(props){ //normalde eklemeyince zaten props bilgisi geliyor. constructorda ekstra özellik eklemek istediğimizde bu sefer super ile varsayılan değerleri kendimiz tekrardan yazmamız gerekli
+    constructor(props){ //normalde eklemeyince zaten props bilgisi geliyor. constructorı biz yazmak istediğimizde bu sefer super ile varsayılan değerleri kendimiz tekrardan yazmamız gerekli. 
       super(props);
       this.clearItems=this.clearItems.bind(this); //burada da Deneme2 demiş olduk
       
