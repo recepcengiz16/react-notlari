@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState} from "react";
 
 function App() {
+  //her veri türü ile state tanımlaması yapılabilir.
+
+  const [name, setName] = useState("Ahmet");
+  const [friends, setFriends] = useState(["Ahmet","Mehmet","Yunus"]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {name}
+
+      {
+        friends.map(friend=>(<div>{friend}</div>))
+      }
+
+      <button onClick={setName("Recep")}>İsmi değiştir</button>
+      <button onClick={setFriends([...friends,"Burak"])}>Listeye Ekle</button>
     </div>
   );
 }
